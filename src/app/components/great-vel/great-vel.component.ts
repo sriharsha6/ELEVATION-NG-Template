@@ -14,14 +14,14 @@ export class GreatVelComponent implements OnInit {
       para:`Soccer football on television who invest dui lorem Obama, but only Performance. 
       At the time of propaganda put football with the customer.`
     }, {
-      icon:'../../../assets/male_avatar.png',
+      icon:'../../../assets/Water_Drop.png',
       heading:'NOW YOU DESERVE',
       para:`
       Soccer football on television who invest dui lorem Obama, but only Performance. 
       At the time of propaganda put football with the customer.
       `
     }, {
-      icon:'../../../assets/male_avatar.png',
+      icon:'../../../assets/Settings.png',
       heading:'NOW YOU DESERVE',
       para:`
       Soccer football on television who invest dui lorem Obama, but only Performance. 
