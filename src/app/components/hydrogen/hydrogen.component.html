@@ -1,0 +1,24 @@
+<section>
+  <div class="heading" align="center">
+    <h1>HYDROGEN ADIPIS</h1>
+    <p>
+      Bananas before the carton is not always pregnant. Bananas taste layer
+      present at the film set <br />
+      and a playground. Football, my neck, my undergraduate lorem. Always
+      afternoon.
+      <br />
+      Undergraduate film sometimes.
+    </p>
+  </div>
+  <div fxLayout="row wrap" fxLayoutAlign="space-around center">
+    <ng-container *ngFor="let item of items">
+      <mat-card class="cards">
+        <div class="card-body">
+          <img mat-card-avatar src="{{ item.icon }}" />
+          <mat-card-title> {{ item.heading }} </mat-card-title>
+          <mat-card-content> {{ item.para }} </mat-card-content>
+        </div>
+      </mat-card>
+    </ng-container>
+  </div>
+</section>
