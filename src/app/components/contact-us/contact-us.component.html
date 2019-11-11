@@ -1,0 +1,44 @@
+<section>
+  <div class="heading" align="center">
+    <h1>CONTACT</h1>
+    <p>
+      Bananas before the carton is not always pregnant. Bananas taste layer
+      present at the film set and a playground. Football, <br />
+      my neck, my undergraduate lorem. Always afternoon. Undergraduate film
+      sometimes.
+    </p>
+  </div>
+
+  <div fxLayout="row wrap" fxLayoutAlign="space-around">
+    <div fxLayout="column">
+      <form #f="ngForm" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="outline">
+          <mat-label> Name </mat-label>
+          <input matInput placeholder="Name" />
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+        <br /><br />
+        <mat-form-field appearance="outline">
+          <mat-label> Email </mat-label>
+          <input matInput placeholder=" Email" name="email" type="email" />
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+        <br /><br />
+
+        <mat-form-field appearance="outline">
+          <mat-label> Message </mat-label>
+          <textarea matInput placeholder=" Message "></textarea>
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+        <br />
+        <br />
+        <button mat-button class="btn-send">SEND</button>
+        <button mat-button class="btn-reset">RESET</button>
+      </form>
+    </div>
+    <div>
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <p>dfgdfgdf</p>
+    </div>
+  </div>
+</section>

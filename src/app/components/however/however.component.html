@@ -1,0 +1,15 @@
+<section>
+  <div class="heading" align="center">
+    <h1>HOWEVER, THEY SHOP</h1>
+  </div>
+  <div fxLayout="row wrap" fxLayoutAlign="space-around center">
+    <ng-container *ngFor="let item of cards">
+      <div class="layout" align="center">
+        <img src="{{ item.card }}" alt="imgg" />
+        <h3>{{ item.name }}</h3>
+        <p>{{ item.para }}</p>
+        <button mat-button>{{ item.actions }}</button>
+      </div>
+    </ng-container>
+  </div>
+</section>

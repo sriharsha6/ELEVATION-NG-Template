@@ -1,0 +1,43 @@
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: whitesmoke;
+}
+.heading {
+  padding-bottom: 30px;
+}
+.heading h1 {
+  font-weight: bolder;
+  font-size: xx-large;
+  color: #505050;
+}
+.heading p {
+  color: #808080;
+}
+
+mat-form-field {
+  width: 500px !important;
+}
+
+button{
+    margin: 8px;
+    
+}
+
+.btn-send{
+    background-color: #82d2ec;
+    color: white;
+    height:50px;
+    width:160px;
+    font-weight: bolder;
+    font-size: medium;
+}
+.btn-reset{
+
+    color: gray;
+    height: 50px;
+    width: 160px;
+    border: solid 2px gray;
+    font-weight: bolder;
+    font-size: medium;
+}
