@@ -13,31 +13,30 @@ section {
 }
 .heading p {
   color: #808080;
+  line-height: 27px;
 }
 
 mat-form-field {
-  width: 500px !important;
+  /* max-width: 500px !important; */
 }
 
-button{
-    margin: 8px;
-    
+button {
+  margin: 8px;
 }
 
-.btn-send{
-    background-color: #82d2ec;
-    color: white;
-    height:50px;
-    width:160px;
-    font-weight: bolder;
-    font-size: medium;
+.btn-send {
+  background-color: #82d2ec;
+  color: white;
+  height: 50px;
+  width: 160px;
+  font-weight: bolder;
+  font-size: medium;
 }
-.btn-reset{
-
-    color: gray;
-    height: 50px;
-    width: 160px;
-    border: solid 2px gray;
-    font-weight: bolder;
-    font-size: medium;
+.btn-reset {
+  color: gray;
+  height: 50px;
+  width: 160px;
+  border: solid 2px gray;
+  font-weight: bolder;
+  font-size: medium;
 }

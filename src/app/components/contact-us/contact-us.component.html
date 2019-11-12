@@ -9,23 +9,47 @@
     </p>
   </div>
 
-  <div fxLayout="row wrap" fxLayoutAlign="space-around">
-    <div fxLayout="column">
+  <div fxLayout="row wrap" Align="center">
+    <div
+      fxLayout="column"
+      fxLayoutAlign="end center"
+      fxFlex="48"
+      fxFlex.xs="100"
+      fxFlex.sm="100"
+      fxFlex.md="50"
+      fxFlex.lg="48"
+      fxFlex.xl="48"
+    >
       <form #f="ngForm" (ngSubmit)="onSubmit()">
-        <mat-form-field appearance="outline">
+        <mat-form-field
+          appearance="outline"
+          [ngStyle.md]="{ 'width.px': 500 }"
+          [ngStyle.lg]="{ 'width.px': 500 }"
+          [ngStyle.xl]="{ 'width.px': 500 }"
+        >
           <mat-label> Name </mat-label>
           <input matInput placeholder="Name" />
           <mat-hint>Hint</mat-hint>
         </mat-form-field>
         <br /><br />
-        <mat-form-field appearance="outline">
+        <mat-form-field
+          appearance="outline"
+          [ngStyle.md]="{ 'width.px': 500 }"
+          [ngStyle.lg]="{ 'width.px': 500 }"
+          [ngStyle.xl]="{ 'width.px': 500 }"
+        >
           <mat-label> Email </mat-label>
           <input matInput placeholder=" Email" name="email" type="email" />
           <mat-hint>Hint</mat-hint>
         </mat-form-field>
         <br /><br />
 
-        <mat-form-field appearance="outline">
+        <mat-form-field
+          appearance="outline"
+          [ngStyle.md]="{ 'width.px': 500 }"
+          [ngStyle.lg]="{ 'width.px': 500 }"
+          [ngStyle.xl]="{ 'width.px': 500 }"
+        >
           <mat-label> Message </mat-label>
           <textarea matInput placeholder=" Message "></textarea>
           <mat-hint>Hint</mat-hint>
@@ -36,9 +60,55 @@
         <button mat-button class="btn-reset">RESET</button>
       </form>
     </div>
-    <div>
-      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-      <p>dfgdfgdf</p>
+
+    <div
+      fxLayoutAlign="start "
+      fxFlex="48"
+      fxFlex.xs="100"
+      fxFlex.sm="100"
+      fxFlex.md="50"
+      fxFlex.lg="48"
+      fxFlex.xl="48"
+    >
+      <div fxLayout="row">
+        <div>
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <span
+            >Untitled Corporation 1234 Somewhere Rd. Suite 5432 Nashville, TN
+            00000-0000</span
+          >
+          <br />
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <span
+            >Untitled Corporation 1234 Somewhere Rd. Suite 5432 Nashville, TN
+            00000-0000</span
+          >
+
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <span
+            >Untitled Corporation 1234 Somewhere Rd. Suite 5432 Nashville, TN
+            00000-0000</span
+          >
+
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <span
+            >Untitled Corporation 1234 Somewhere Rd. Suite 5432 Nashville, TN
+            00000-0000</span
+          >
+
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <span
+            >Untitled Corporation 1234 Somewhere Rd. Suite 5432 Nashville, TN
+            00000-0000</span
+          >
+
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <span
+            >Untitled Corporation 1234 Somewhere Rd. Suite 5432 Nashville, TN
+            00000-0000</span
+          >
+        </div>
+      </div>
     </div>
   </div>
 </section>
