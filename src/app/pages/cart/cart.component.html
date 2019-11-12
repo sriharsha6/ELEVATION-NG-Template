@@ -1,0 +1,76 @@
+<section>
+  <mat-card class="bg-white">
+    <div class="head" align="center" style="padding: 20px;">
+      <h3>Cart Items</h3>
+    </div>
+
+    <div>
+      <form>
+        <mat-form-field
+          appearance="outline"
+          [ngStyle.md]="{ 'width.px': 300 }"
+          [ngStyle.lg]="{ 'width.px': 300 }"
+          [ngStyle.xl]="{ 'width.px': 300 }"
+        >
+          <mat-label> Item Name </mat-label>
+          <input matInput placeholder="Item Name" />
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field
+          appearance="outline"
+          [ngStyle.md]="{ 'width.px': 150 }"
+          [ngStyle.lg]="{ 'width.px': 150 }"
+          [ngStyle.xl]="{ 'width.px': 150 }"
+        >
+          <mat-label> Quantity </mat-label>
+          <input matInput placeholder="Quantity" />
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field
+          appearance="outline"
+          [ngStyle.md]="{ 'width.px': 150 }"
+          [ngStyle.lg]="{ 'width.px': 150 }"
+          [ngStyle.xl]="{ 'width.px': 150 }"
+        >
+          <mat-label> Size </mat-label>
+          <input matInput placeholder="Size" />
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field
+          appearance="outline"
+          [ngStyle.md]="{ 'width.px': 150 }"
+          [ngStyle.lg]="{ 'width.px': 150 }"
+          [ngStyle.xl]="{ 'width.px': 150 }"
+        >
+          <mat-label> Brand </mat-label>
+          <input matInput placeholder="Brand" />
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field
+          appearance="outline"
+          [ngStyle.md]="{ 'width.px': 150 }"
+          [ngStyle.lg]="{ 'width.px': 150 }"
+          [ngStyle.xl]="{ 'width.px': 150 }"
+        >
+          <mat-label> price </mat-label>
+          <input matInput placeholder="price" />
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+
+        <button
+          mat-raised-button
+          color="primary"
+          [ngStyle]="{ 'height.px': 60 }"
+        >
+          add
+        </button>
+
+        <br /><br />
+      </form>
+    </div>
+  </mat-card>
+</section>

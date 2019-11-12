@@ -4,7 +4,7 @@ import { NgModule } from "@angular/core";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
- 
+
 import { SharedModule } from "./shared/shared.module";
 import { FormsModule } from "@angular/forms";
 import { MatFormFieldModule } from "@angular/material/form-field";
@@ -17,6 +17,7 @@ import { HoweverComponent } from "./components/however/however.component";
 import { ContactUsComponent } from "./components/contact-us/contact-us.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { NavbarComponent } from "./components/navbar/navbar.component";
+import { CartComponent } from './pages/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -28,13 +29,14 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
     HoweverComponent,
     ContactUsComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
- 
+
     SharedModule,
     FormsModule,
     MatFormFieldModule
