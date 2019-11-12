@@ -6,7 +6,7 @@ import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { SharedModule } from "./shared/shared.module";
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatFormFieldModule } from "@angular/material/form-field";
 
 import { HomePageComponent } from "./pages/home-page/home-page.component";
@@ -39,7 +39,8 @@ import { CartComponent } from './pages/cart/cart.component';
 
     SharedModule,
     FormsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

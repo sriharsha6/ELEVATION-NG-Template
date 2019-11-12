@@ -20,49 +20,104 @@
       fxFlex.lg="48"
       fxFlex.xl="48"
     >
-      <form #f="ngForm" (ngSubmit)="onSubmit()">
-        <mat-form-field
-          appearance="outline"
-          [ngStyle.md]="{ 'width.px': 500 }"
-          [ngStyle.lg]="{ 'width.px': 500 }"
-          [ngStyle.xl]="{ 'width.px': 500 }"
-        >
-          <mat-label> Name </mat-label>
-          <input matInput placeholder="Name" />
-          <mat-hint>Hint</mat-hint>
-        </mat-form-field>
-        <br /><br />
-        <mat-form-field
-          appearance="outline"
-          [ngStyle.md]="{ 'width.px': 500 }"
-          [ngStyle.lg]="{ 'width.px': 500 }"
-          [ngStyle.xl]="{ 'width.px': 500 }"
-        >
-          <mat-label> Email </mat-label>
-          <input matInput placeholder=" Email" name="email" type="email" />
-          <mat-hint>Hint</mat-hint>
-        </mat-form-field>
-        <br /><br />
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <mat-form-field
+            appearance="outline"
+            [ngStyle.md]="{ 'width.px': 500 }"
+            [ngStyle.lg]="{ 'width.px': 500 }"
+            [ngStyle.xl]="{ 'width.px': 500 }"
+          >
+            <mat-label> Name </mat-label>
+            <input
+              matInput
+              placeholder="Name"
+              name="name"
+              formControlName="name"
+            />
+            <mat-hint
+              *ngIf="
+                !contactForm.get('name').valid &&
+                contactForm.get('name').touched
+              "
+            >
+              required
+            </mat-hint>
+          </mat-form-field>
+        </div>
 
-        <mat-form-field
-          appearance="outline"
-          [ngStyle.md]="{ 'width.px': 500 }"
-          [ngStyle.lg]="{ 'width.px': 500 }"
-          [ngStyle.xl]="{ 'width.px': 500 }"
+        <br />
+
+        <div class="form-group">
+          <mat-form-field
+            appearance="outline"
+            [ngStyle.md]="{ 'width.px': 500 }"
+            [ngStyle.lg]="{ 'width.px': 500 }"
+            [ngStyle.xl]="{ 'width.px': 500 }"
+          >
+            <mat-label> Email </mat-label>
+            <input
+              matInput
+              placeholder=" Email"
+              name="email"
+              formControlName="email"
+              type="email"
+            />
+            <mat-hint
+              *ngIf="
+                !contactForm.get('email').valid &&
+                contactForm.get('email').touched
+              "
+            >
+              required
+            </mat-hint>
+          </mat-form-field>
+        </div>
+
+        <br />
+
+        <div class="form-group">
+          <mat-form-field
+            appearance="outline"
+            [ngStyle.md]="{ 'width.px': 500 }"
+            [ngStyle.lg]="{ 'width.px': 500 }"
+            [ngStyle.xl]="{ 'width.px': 500 }"
+          >
+            <mat-label> Message </mat-label>
+            <textarea
+              matInput
+              placeholder="Message"
+              formControlName="message"
+            ></textarea>
+            <mat-hint
+              *ngIf="
+                !contactForm.get('message').valid &&
+                contactForm.get('message').touched
+              "
+            >
+              required
+            </mat-hint>
+          </mat-form-field>
+        </div>
+
+        <br />
+        <br />
+        <button
+          mat-button
+          class="btn-send"
+          type="submit"
+          [disabled]="!contactForm.valid"
         >
-          <mat-label> Message </mat-label>
-          <textarea matInput placeholder=" Message "></textarea>
-          <mat-hint>Hint</mat-hint>
-        </mat-form-field>
-        <br />
-        <br />
-        <button mat-button class="btn-send">SEND</button>
-        <button mat-button class="btn-reset">RESET</button>
+          SEND
+        </button>
+        <button mat-button class="btn-reset" (click)="contactForm.reset()">
+          RESET
+        </button>
       </form>
     </div>
 
     <div
-      fxLayoutAlign="start "
+      fxLayoutAlign="start"
       fxFlex="48"
       fxFlex.xs="100"
       fxFlex.sm="100"

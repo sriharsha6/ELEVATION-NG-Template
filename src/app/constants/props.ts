@@ -6,7 +6,7 @@ export class Props {
   static MENU = MENU;
   static TIME_OUT = 1000;
   static MAX_WIDTH = "1400px";
-  static EMAIL_PATTERN: any = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}";
+  public EMAIL_PATTERN: any = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}";
   static PASSWORD_PATTERN: any = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$";
   static ALL_PATTERN: string = "(.*?)";
   static DATA_PATTERN: string = "[\\w\\d\\s.,&@:;!#-=]*";

@@ -15,17 +15,14 @@ section {
   color: #808080;
   line-height: 27px;
 }
-
-mat-form-field {
-  /* max-width: 500px !important; */
-}
+ 
 
 button {
   margin: 8px;
 }
 
 .btn-send {
-  background-color: #82d2ec;
+  background-color: #6ccae9;
   color: white;
   height: 50px;
   width: 160px;
