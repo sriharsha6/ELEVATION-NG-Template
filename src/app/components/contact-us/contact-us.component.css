@@ -5,6 +5,7 @@ section {
 }
 .heading {
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 .heading h1 {
   font-weight: bolder;
@@ -15,7 +16,11 @@ section {
   color: #808080;
   line-height: 27px;
 }
- 
+
+.bg-white {
+  background-color: white;
+  margin: 70px;
+}
 
 button {
   margin: 8px;

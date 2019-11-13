@@ -46,6 +46,6 @@ export class ContactUsComponent implements OnInit {
     console.log("email:", this.contactForm.value.email);
 
     console.log("message:", this.contactForm.value.message);
-    this.contactForm.reset()
+    this.contactForm.reset();
   }
 }

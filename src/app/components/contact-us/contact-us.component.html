@@ -1,162 +1,170 @@
 <section>
-  <div class="heading" align="center">
-    <h1>CONTACT</h1>
-    <p>
-      Bananas before the carton is not always pregnant. Bananas taste layer
-      present at the film set and a playground. Football, <br />
-      my neck, my undergraduate lorem. Always afternoon. Undergraduate film
-      sometimes.
-    </p>
-  </div>
-
-  <div fxLayout="row wrap" Align="center">
-    <div
-      fxLayout="column"
-      fxLayoutAlign="end center"
-      fxFlex="48"
-      fxFlex.xs="100"
-      fxFlex.sm="100"
-      fxFlex.md="50"
-      fxFlex.lg="48"
-      fxFlex.xl="48"
-    >
-      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-        <div class="form-group">
-          <mat-form-field
-            appearance="outline"
-            [ngStyle.md]="{ 'width.px': 500 }"
-            [ngStyle.lg]="{ 'width.px': 500 }"
-            [ngStyle.xl]="{ 'width.px': 500 }"
-          >
-            <mat-label> Name </mat-label>
-            <input
-              matInput
-              placeholder="Name"
-              name="name"
-              formControlName="name"
-            />
-            <mat-hint
-              *ngIf="
-                !contactForm.get('name').valid &&
-                contactForm.get('name').touched
-              "
-            >
-              required
-            </mat-hint>
-          </mat-form-field>
-        </div>
-
-        <br />
-
-        <div class="form-group">
-          <mat-form-field
-            appearance="outline"
-            [ngStyle.md]="{ 'width.px': 500 }"
-            [ngStyle.lg]="{ 'width.px': 500 }"
-            [ngStyle.xl]="{ 'width.px': 500 }"
-          >
-            <mat-label> Email </mat-label>
-            <input
-              matInput
-              placeholder=" Email"
-              name="email"
-              formControlName="email"
-              type="email"
-            />
-            <mat-hint
-              *ngIf="
-                !contactForm.get('email').valid &&
-                contactForm.get('email').touched
-              "
-            >
-              required
-            </mat-hint>
-          </mat-form-field>
-        </div>
-
-        <br />
-
-        <div class="form-group">
-          <mat-form-field
-            appearance="outline"
-            [ngStyle.md]="{ 'width.px': 500 }"
-            [ngStyle.lg]="{ 'width.px': 500 }"
-            [ngStyle.xl]="{ 'width.px': 500 }"
-          >
-            <mat-label> Message </mat-label>
-            <textarea
-              matInput
-              placeholder="Message"
-              formControlName="message"
-            ></textarea>
-            <mat-hint
-              *ngIf="
-                !contactForm.get('message').valid &&
-                contactForm.get('message').touched
-              "
-            >
-              required
-            </mat-hint>
-          </mat-form-field>
-        </div>
-
-        <br />
-        <br />
-        <button
-          mat-button
-          class="btn-send"
-          type="submit"
-          [disabled]="!contactForm.valid"
-        >
-          SEND
-        </button>
-        <button mat-button class="btn-reset" (click)="contactForm.reset()">
-          RESET
-        </button>
-      </form>
+  <div class="bg-white">
+    <div class="heading" align="center">
+      <h1>CONTACT</h1>
+      <p>
+        Bananas before the carton is not always pregnant. Bananas taste layer
+        present at the film set and a playground. Football, <br />
+        my neck, my undergraduate lorem. Always afternoon. Undergraduate film
+        sometimes.
+      </p>
     </div>
 
-    <div
-      fxLayoutAlign="start"
-      fxFlex="48"
-      fxFlex.xs="100"
-      fxFlex.sm="100"
-      fxFlex.md="50"
-      fxFlex.lg="48"
-      fxFlex.xl="48"
-    >
-      <div fxLayout="row" align="start">
-        <div>
-          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-          <span
-            >Untitled Corporation 1234 Somewhere Rd. Suite 5432 Nashville, TN
-            00000-0000</span
+    <div fxLayout="row wrap" Align="center">
+      <div
+        fxLayout="column"
+        fxLayoutAlign="end center"
+        fxFlex="48"
+        fxFlex.xs="100"
+        fxFlex.sm="100"
+        fxFlex.md="50"
+        fxFlex.lg="48"
+        fxFlex.xl="48"
+      >
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <mat-form-field
+              appearance="outline"
+              [ngStyle.md]="{ 'width.px': 500 }"
+              [ngStyle.lg]="{ 'width.px': 500 }"
+              [ngStyle.xl]="{ 'width.px': 500 }"
+            >
+              <mat-label> Name </mat-label>
+              <input
+                matInput
+                placeholder="Name"
+                name="name"
+                formControlName="name"
+              />
+              <mat-hint
+                *ngIf="
+                  !contactForm.get('name').valid &&
+                  contactForm.get('name').touched
+                "
+              >
+                required
+              </mat-hint>
+            </mat-form-field>
+          </div>
+
+          <br />
+
+          <div class="form-group">
+            <mat-form-field
+              appearance="outline"
+              [ngStyle.md]="{ 'width.px': 500 }"
+              [ngStyle.lg]="{ 'width.px': 500 }"
+              [ngStyle.xl]="{ 'width.px': 500 }"
+            >
+              <mat-label> Email </mat-label>
+              <input
+                matInput
+                placeholder=" Email"
+                name="email"
+                formControlName="email"
+                type="email"
+              />
+              <mat-hint
+                *ngIf="
+                  !contactForm.get('email').valid &&
+                  contactForm.get('email').touched
+                "
+              >
+                required
+              </mat-hint>
+            </mat-form-field>
+          </div>
+
+          <br />
+
+          <div class="form-group">
+            <mat-form-field
+              appearance="outline"
+              [ngStyle.md]="{ 'width.px': 500 }"
+              [ngStyle.lg]="{ 'width.px': 500 }"
+              [ngStyle.xl]="{ 'width.px': 500 }"
+            >
+              <mat-label> Message </mat-label>
+              <textarea
+                matInput
+                placeholder="Message"
+                formControlName="message"
+              ></textarea>
+              <mat-hint
+                *ngIf="
+                  !contactForm.get('message').valid &&
+                  contactForm.get('message').touched
+                "
+              >
+                required
+              </mat-hint>
+            </mat-form-field>
+          </div>
+
+          <br />
+          <br />
+          <button
+            mat-button
+            class="btn-send"
+            type="submit"
+            [disabled]="!contactForm.valid"
           >
-          <br /><br />
-          <hr />
+            SEND
+          </button>
+          <button mat-button class="btn-reset" (click)="contactForm.reset()">
+            RESET
+          </button>
+        </form>
 
-          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-          <span> (000) 000-0000 x1234 </span>
-          <br /><br />
-          <hr />
+        <pre>
+        {{ contactForm.status }}
+        {{ contactForm.valid }}
+      </pre
+        >
+      </div>
 
-          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-          <span> information@untitled.tld </span>
-          <br /><br />
-          <hr />
+      <div
+        fxLayoutAlign="start"
+        fxFlex="48"
+        fxFlex.xs="100"
+        fxFlex.sm="100"
+        fxFlex.md="50"
+        fxFlex.lg="48"
+        fxFlex.xl="48"
+      >
+        <div fxLayout="row" align="start">
+          <div>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <span
+              >Untitled Corporation 1234 Somewhere Rd. Suite 5432 Nashville, TN
+              00000-0000</span
+            >
+            <br /><br />
+            <hr />
 
-          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-          <span> twitter.com/untitled-tld </span>
-          <br /><br />
-          <hr />
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <span> (000) 000-0000 x1234 </span>
+            <br /><br />
+            <hr />
 
-          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-          <span> facebook.com/untitled-tld </span>
-          <br /><br />
-          <hr />
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <span> information@untitled.tld </span>
+            <br /><br />
+            <hr />
 
-          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-          <span> linkedin.com/untitled-tld </span>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <span> twitter.com/untitled-tld </span>
+            <br /><br />
+            <hr />
+
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <span> facebook.com/untitled-tld </span>
+            <br /><br />
+            <hr />
+
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <span> linkedin.com/untitled-tld </span>
+          </div>
         </div>
       </div>
     </div>
