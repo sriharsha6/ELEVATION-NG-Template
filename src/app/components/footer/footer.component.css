@@ -1,16 +1,17 @@
 section {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: #f0f0f0;
-  }
-  .heading {
-    padding-bottom: 30px;
-  }
-  .heading h1 {
-    font-weight: bolder;
-    font-size: xx-large;
-    color: #505050;
-  }
-  .heading p {
-    color: #808080;
-  }
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #443d36;
+  color: #fff;
+}
+.heading {
+  padding-bottom: 30px;
+}
+.heading h1 {
+  font-weight: bolder;
+  font-size: xx-large;
+  color: #fff;
+}
+.heading p {
+  color: #fff;
+}

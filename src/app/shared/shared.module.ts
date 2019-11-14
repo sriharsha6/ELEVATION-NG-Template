@@ -1,9 +1,5 @@
 import { NgModule, ModuleWithProviders, ErrorHandler } from "@angular/core";
 import { FormsModule } from "@angular/forms";
-import { HTTP_INTERCEPTORS } from "@angular/common/http";
-import { HttpClientModule } from "@angular/common/http";
-import { AppInterceptor } from "./service/app.interceptor";
-import { CommonModule } from "@angular/common";
 import { MaterialModule } from "./material.module";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import {
@@ -34,7 +30,6 @@ import {
     AgePipe,
     DateTimeISOPipe,
     PercentagePipe
-    // FormMessagesComponent,
   ],
 
   exports: [

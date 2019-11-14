@@ -42,3 +42,8 @@ button {
   font-weight: bolder;
   font-size: medium;
 }
+
+button:disabled {
+  background-color: gray;
+  color: white;
+}
