@@ -8,9 +8,8 @@ import { TemplatePortalDirective, ComponentPortal } from "@angular/cdk/portal";
   styleUrls: ["./in-popup.component.css"]
 })
 export class InPopupComponent {
-
   overlayRef: OverlayRef;
-  
+
   @ViewChild("overlayTemplate", null) overlayTemplate: TemplatePortalDirective;
 
   constructor(private overlay: Overlay) {}

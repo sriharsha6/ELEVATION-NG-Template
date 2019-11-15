@@ -10,6 +10,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { PortalModule } from '@angular/cdk/portal';
 import { OverlayModule } from '@angular/cdk/overlay';
+import { HttpClientModule } from '@angular/common/http';
 
 // pages 
 import { HomePageComponent } from "./pages/home-page/home-page.component";
@@ -25,6 +26,8 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
 import { CartComponent } from './pages/cart/cart.component';
 import { InPopupComponent } from './components/common/in-popup/in-popup.component';
 
+//services
+import { CartService } from './pages/cart/cart.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,14 +46,13 @@ import { InPopupComponent } from './components/common/in-popup/in-popup.componen
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
     SharedModule,
     FormsModule,
     MatFormFieldModule,
     ReactiveFormsModule,
-    PortalModule, OverlayModule,
+    PortalModule, OverlayModule,HttpClientModule
   ],
-  providers: [],
+  providers: [CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
