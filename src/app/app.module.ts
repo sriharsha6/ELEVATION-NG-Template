@@ -8,6 +8,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { SharedModule } from "./shared/shared.module";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatFormFieldModule } from "@angular/material/form-field";
+import { PortalModule } from '@angular/cdk/portal';
+import { OverlayModule } from '@angular/cdk/overlay';
 
 // pages 
 import { HomePageComponent } from "./pages/home-page/home-page.component";
@@ -21,6 +23,7 @@ import { ContactUsComponent } from "./components/contact-us/contact-us.component
 import { FooterComponent } from "./components/footer/footer.component";
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { CartComponent } from './pages/cart/cart.component';
+import { InPopupComponent } from './components/common/in-popup/in-popup.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,8 @@ import { CartComponent } from './pages/cart/cart.component';
     ContactUsComponent,
     FooterComponent,
     NavbarComponent,
-    CartComponent
+    CartComponent,
+    InPopupComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +47,8 @@ import { CartComponent } from './pages/cart/cart.component';
     SharedModule,
     FormsModule,
     MatFormFieldModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    PortalModule, OverlayModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

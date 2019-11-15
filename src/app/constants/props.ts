@@ -6,8 +6,10 @@ export class Props {
   static MENU = MENU;
   static TIME_OUT = 1000;
   static MAX_WIDTH = "1400px";
-  public EMAIL_PATTERN: any = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}";
-  static PASSWORD_PATTERN: any = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$";
+  public EMAIL_PATTERN: any =
+    "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}";
+  static PASSWORD_PATTERN: any =
+    "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$";
   static ALL_PATTERN: string = "(.*?)";
   static DATA_PATTERN: string = "[\\w\\d\\s.,&@:;!#-=]*";
   static DECIMAL_PATTERN: string = "(\\d+(\\.\\d{1,2})?)";
@@ -33,7 +35,8 @@ export class Props {
 
   public static PLEASE_LOGIN: string = "Please login.";
   public static CONFIRM_MESSAGE: string = "Do you want to proceed?";
-  public static PROFILE_STATUS_ACTIVE: string = "Do you want to Deactivate this Account";
+  public static PROFILE_STATUS_ACTIVE: string =
+    "Do you want to Deactivate this Account";
   public static CURRENCY = "$ ";
   public static PERCENTAGE = "% ";
   public static MESSAGE: string = "YOUR PROFILE IS NOT VERIFIED";

@@ -1,0 +1,13 @@
+<div>
+  <button mat-raised-button color="primary" (click)="openTemplateOverlay()">
+    open cdkPortal popup
+  </button>
+</div>
+
+<!-- Use NG-TEMPLATE with CDK-Portal - PORTAL Exists as overlayRef -->
+<ng-template cdk-portal #overlayTemplate="cdkPortal">
+  <div class="cdk-overlay-pane">
+    <h3>Overlay CDK Portal</h3>
+    <p>Portals in templates in portals in templates</p>
+  </div>
+</ng-template>
