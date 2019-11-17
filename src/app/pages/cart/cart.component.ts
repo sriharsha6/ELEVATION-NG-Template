@@ -13,9 +13,12 @@ export class CartComponent implements OnInit {
   ngOnInit() {}
 
   showConfig() {
-    this._cartService
-      .getConfig()
-      .subscribe((data: Config) => (this.config = { heroesUrl: (data as any).heroesUrl,
-        textfile:  (data as any).textfile, }));
+    this._cartService.getConfig().subscribe(
+      (data: Config) =>
+        (this.config = {
+          heroesUrl: (data as any).heroesUrl,
+          textfile: (data as any).textfile
+        })
+    );
   }
 }

@@ -10,7 +10,7 @@ import { Config } from "./config";
 export class CartService {
   constructor(private _http: HttpClient) {}
 
-  configUrl = 'assets/config.json';
+  configUrl = "assets/config.json";
 
   getConfig() {
     return this._http.get<Config>(this.configUrl);

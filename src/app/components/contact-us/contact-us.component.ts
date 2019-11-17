@@ -7,6 +7,7 @@ import {
 } from "@angular/forms";
 import { ContactUs } from "../../entites/ContactUs";
 import { Props } from "src/app/constants/props";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-contact-us",
@@ -23,7 +24,7 @@ export class ContactUsComponent implements OnInit {
   contactForm: FormGroup;
   emailPattern = "^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$";
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {
     this.contactForm = new FormGroup({
@@ -46,6 +47,7 @@ export class ContactUsComponent implements OnInit {
     console.log("email:", this.contactForm.value.email);
 
     console.log("message:", this.contactForm.value.message);
-    this.contactForm.reset();
+    window.alert("We Have Received Your Details Thank You For contacting Us. ");
+    this.router.navigate(["/"]);
   }
 }
